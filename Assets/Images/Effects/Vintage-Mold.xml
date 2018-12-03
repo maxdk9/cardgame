@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<CurvesPlusXMLFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CurveMode>Rgb</CurveMode>
+  <AdvancedCurveIn>A</AdvancedCurveIn>
+  <AdvancedCurveOut>A</AdvancedCurveOut>
+  <CurveDrawMode>Spline</CurveDrawMode>
+  <ControlPoints>
+    <Curve>
+      <Point X="0" Y="23" />
+      <Point X="37" Y="29" />
+      <Point X="73" Y="66" />
+      <Point X="208" Y="221" />
+      <Point X="255" Y="233" />
+    </Curve>
+    <Curve>
+      <Point X="0" Y="42" />
+      <Point X="104" Y="72" />
+      <Point X="218" Y="221" />
+      <Point X="255" Y="216" />
+    </Curve>
+    <Curve>
+      <Point X="0" Y="27" />
+      <Point X="32" Y="63" />
+      <Point X="64" Y="70" />
+      <Point X="208" Y="208" />
+      <Point X="255" Y="206" />
+    </Curve>
+  </ControlPoints>
+</CurvesPlusXMLFile>
