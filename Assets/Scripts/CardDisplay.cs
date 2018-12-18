@@ -18,6 +18,7 @@ public class CardDisplay : MonoBehaviour
 	void Start ()
 	{
 		cardName.text = card.name;
+		
 		cardDescription.text = card.GetDescription();
 		difficultyString.text = card.GetCurrentDifficulty().ToString();
 		deadlinessString.text = card.getCurrentDeadliness().ToString();
