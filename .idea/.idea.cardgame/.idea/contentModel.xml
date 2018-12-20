@@ -33,6 +33,7 @@
         <e p="Scripts" t="Include">
           <e p="Card.cs" t="Include" />
           <e p="CardDisplay.cs" t="Include" />
+          <e p="CardManager.cs" t="Include" />
           <e p="CardScript.cs" t="Include" />
           <e p="DropPlayScript.cs" t="Include" />
         </e>

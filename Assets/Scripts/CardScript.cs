@@ -47,7 +47,7 @@ public class CardScript : MonoBehaviour ,IBeginDragHandler,IDragHandler,IEndDrag
 	public void OnDrag(PointerEventData eventData)
 	{
 		Vector3 newpos = MainCamera.ScreenToWorldPoint(eventData.position);
-		newpos.z = 0;
+		//newpos.z = 0;
 		transform.position = newpos+offset;
 		CheckPosition();
 		if (TempCardGo.transform.parent != DefaultTempCardParent)
