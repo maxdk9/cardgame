@@ -1,0 +1,628 @@
+[
+
+	
+	//NORMAL MONSTERS
+		{
+			class:mazzy.and.argo.model.card.Card,
+			level: 0,
+			type:monster,
+			name:skeleton,
+			resolved:notresolved,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},
+			{
+			class:mazzy.and.argo.model.card.Card,
+			level: 0,
+			type:monster,
+			name:skeleton,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},
+			{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:skeleton,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},
+			{
+			class:mazzy.and.argo.model.card.Card, level: 0,
+			type:monster,
+			name:harpy,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},
+		{
+			class:mazzy.and.argo.model.card.Card, level: 0,
+			type:monster,
+			name:harpy,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},
+		{
+			class:mazzy.and.argo.model.card.Card, level: 0,
+			type:monster,
+			name:hydra,
+			difficulty:[
+				7,8,9,10,11,11
+			],
+			deadliness:[1,2,2,3,3,4]
+		},
+		
+
+		
+		{
+			class:mazzy.and.argo.model.card.Card, level: 0,
+			type:monster,
+			name:gorgon,
+			difficulty:[
+				7,7,8,7,8,8
+			],
+			deadliness:[1,1,1,2,2,2]
+		},
+		{
+			class:mazzy.and.argo.model.card.Card,
+			level: 0,
+			type:monster,
+			name:typhon,
+			difficulty:[
+				10,9,9,8,8,8
+			],
+			deadliness:[3,2,2,2,2,1]
+		},
+
+		{
+			class:mazzy.and.argo.model.card.Card,
+			 level: 0,
+			type:monster,
+			name:echidna,
+			difficulty:[
+				9,9,8,8,7,7
+			],
+			deadliness:[2,2,2,2,2,1]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, level: 0,
+			type:monster,
+			name:minotaur,
+			difficulty:[
+				8,9,8,9,9,9
+			],
+			deadliness:[1,2,2,2,2,3]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card,
+			level: 0,
+			type:monster,
+			name:cyclops,
+			difficulty:[
+				9,9,9,9,9,9
+			],
+			deadliness:[1,2,2,2,2,2]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:cerberus,
+			difficulty:[
+				8,8,8,10,9,9
+			],
+			deadliness:[1,1,2,2,2,2]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:manticore,
+			difficulty:[
+				8,8,9,9,9,10
+			],
+			deadliness:[1,2,1,2,2,2]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:colchiandragon,
+			effecttype:Defeat_ColchianDragon_single,
+			difficulty:[
+				9,9,9,10,10,9
+			],
+			deadliness:[1,1,2,2,2,3]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card,
+			level: 0,
+			type:monster,
+			name:scylla,
+			effecttype:Ignore_Scylla,
+			difficulty:[
+				8,8,8,9,9,9
+			],
+			deadliness:[2,2,2,2,2,2]
+		},
+		
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:charybdis,
+			effecttype:Ignore_Charybdis,
+			difficulty:[
+				8,8,8,9,9,9
+			],
+			deadliness:[2,2,2,2,2,2]
+		},
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:ketos,
+			difficulty:[
+				8,8,8,10,9,9
+			],
+			deadliness:[1,1,2,1,1,2]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:khalkotaurus,
+			difficulty:[
+				7,8,8,9,9,9
+			],
+			deadliness:[1,1,2,1,2,2]
+		},
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:khalkotaurus,
+			difficulty:[
+				7,8,8,9,9,9
+			],
+			deadliness:[1,1,2,1,2,2]
+		},
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:sirens,
+			difficulty:[
+				7,7,7,7,8,8
+			],
+			deadliness:[1,1,1,1,1,1]
+		},
+	//NORMAL TREASURE	
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:argo,
+			effecttype:Argo_TreasureRolls_p1_cont,
+			useType:continuous,
+			difficulty:[
+				7,8,8,8,9,9
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:swordofpeleus,
+			effecttype:SwordOfPeleus_MonsterRolls_p1_cont,
+			useType:continuous,
+			difficulty:[
+				7,8,8,9,10,10
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:wingedsandals,
+			effecttype:WingedSandals_ReturnAdventureCard_single,
+			useType:single,
+			difficulty:[
+				6,6,7,7,8,8
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		
+		
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:cornucopia,
+			effecttype:Cornucopia_Recover2Crew_single,
+			useType:single,
+			difficulty:[
+				6,7,7,8,8,9
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:goldenfleece,
+			useType:single,
+			difficulty:[
+				8,9,10,11,12,12
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:pansflute,
+			effecttype:PansFlute_DiscardTop2Cards_single,
+			useType:single,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:mirroredshield,
+			useType:continuous,
+			difficulty:[
+				6,6,6,7,7,7
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:orpheuslyre,
+			effecttype:OrpheusLyre_StopLevelUpMonsterInVictoryPile_single,
+			useType:single,
+			difficulty:[
+				8,9,9,9,10,10
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		//RESERVE MONSTERS
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:chimera,
+			reserve:true,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:nemeanlion,
+			reserve:true,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:sphinx,
+			reserve:true,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:harpy,
+			reserve:true,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:harpy,
+			reserve:true,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:harpy,
+			reserve:true,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:monster,
+			name:harpy,
+			reserve:true,
+			difficulty:[
+				6,6,6,7,7,8
+			],
+			deadliness:[1,1,1,1,2,2]
+		},	
+		
+		//RESERVE TREASURE
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:helmofhades,
+			effecttype:HelmOfHades_MoveMonsterToDiscardPile_single,
+			reserve:true,
+			useType:single,
+			difficulty:[
+				6,7,7,8,8,9
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:cloakofheracles,
+			effecttype:CloakOfHeracles_monsterdifficulty_m1_cont,
+			reserve:true,
+			useType:single,
+			difficulty:[
+				6,6,6,7,7,7
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:poseidontrident,
+			effecttype:PoseydonTrident_ConvertWrathToBlessing_cont,
+			reserve:true,
+			useType:continuous,
+			difficulty:[
+				6,6,7,7,7,8
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card,
+			level: 0,
+			type:treasure,
+			name:ambrosia,
+			effecttype:Ambrosia_Recover3Crew_single,
+			reserve:true,
+			useType:single,
+			difficulty:[
+				7,7,8,9,9,10
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:daedaluswing,
+			effecttype:DaedalusWing_RerollDieOncePerTurn_cont,
+			reserve:true,
+			useType:single,
+			difficulty:[
+				7,8,8,9,9,10
+			],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:aegisofzeus,
+			effecttype:AegisOfZeus_IgnoreDeadliness_single,
+			reserve:true,
+			useType:single,
+			difficulty:[
+				8,9,9,9,9,10
+			],
+			deadliness:[0,0,0,0,0,0]
+		},	
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:treasure,
+			name:apollobow,
+			effecttype:ApolloBow_RollDice6_single,
+			reserve:true,
+			useType:single,
+			difficulty:[
+				8,8,9,9,9,10
+			],
+			deadliness:[0,0,0,0,0,0]
+		},	
+		
+		//BLESSING
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:blessing,
+			name:hera_blessing,
+			wrath:false,
+			reserve:false,
+			useType:single,
+			difficulty:[0,0,0,0,0,0],
+			deadliness:[0,0,0,0,0,0]
+		},	
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:blessing,
+			name:hera_blessing,
+			wrath:false,
+			reserve:false,
+			useType:single,
+			difficulty:[0,0,0,0,0,0],
+			deadliness:[0,0,0,0,0,0]
+		},	
+		
+		
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:wrath,
+			name:poseidon_wrath,
+			wrath:true,
+			reserve:true,
+			useType:single,
+			difficulty:[0,0,0,0,0,0],
+			deadliness:[0,0,0,0,0,0]
+		},	
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:wrath,
+			name:poseidon_wrath,
+			wrath:true,
+			reserve:true,
+			useType:single,
+			difficulty:[0,0,0,0,0,0],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:wrath,
+			name:hades_wrath,
+			wrath:true,
+			reserve:true,
+			useType:single,
+			difficulty:[0,0,0,0,0,0],
+			deadliness:[0,0,0,0,0,0]
+		},
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:wrath,
+			name:hades_wrath,
+			wrath:true,
+			reserve:true,
+			useType:single,
+			difficulty:[0,0,0,0,0,0],
+			deadliness:[0,0,0,0,0,0]
+		},	
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:blessing,
+			name:zeus_blessing,
+			wrath:false,
+			reserve:true,
+			useType:single,
+			difficulty:[0,0,0,0,0,0],
+			deadliness:[0,0,0,0,0,0]
+		},
+		
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:blessing,
+			name:zeus_blessing,
+			wrath:false,
+			reserve:true,
+			useType:single,
+			difficulty:[0,0,0,0,0,0],
+			deadliness:[0,0,0,0,0,0]
+		},
+			
+		{
+			class:mazzy.and.argo.model.card.Card, 
+			level: 0,
+			type:blessing,
+			name:apollo_blessing,
+			wrath:false,
+			reserve:true,
+			useType:single,
+			difficulty:[0,0,0,0,0,0],
+			deadliness:[0,0,0,0,0,0]
+		},
+		{
+			class:mazzy.and.argo.model.card.Card, level: 0,
+			type:blessing,
+			name:apollo_blessing,
+			wrath:false,
+			reserve:true,
+			useType:single,
+			difficulty:[0,0,0,0,0,0],
+			deadliness:[0,0,0,0,0,0]
+		},
+	]

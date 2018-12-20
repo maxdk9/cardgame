@@ -1,0 +1,313 @@
+[
+ {
+	class: mazzy.and.rimp.gamemodel.deck.DevelopmentCard,
+	item: expeditionjournal,
+	sTexture: development1,
+	event9:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:0,
+	description:youheardrumsinthedistance,
+	},
+	event10:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:item,
+	attacknumber:0,
+	healthnumber:0,
+	 
+	},
+	event11:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:6,
+	healthnumber:0,
+	description:monstrousboa,
+	},
+	event12:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:-2,
+	description:bouldertrap,
+	},
+	
+},
+
+
+{
+	class: mazzy.and.rimp.gamemodel.deck.DevelopmentCard,
+	item: canteen,
+	sTexture: development2,
+	event9:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:4,
+	healthnumber:0,
+	description:angrynatives,
+	},
+	event10:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:-1,
+	description:spiketrap,
+	},
+	event11:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:1,
+	description:freshfruit
+	},
+	event12:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:4,
+	healthnumber:0,
+	description:angrynatives,
+	},
+},
+
+{
+	class: mazzy.and.rimp.gamemodel.deck.DevelopmentCard,
+	item: adventuringtools,
+	sTexture: development3,
+	event9:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:3,
+	healthnumber:0,
+	description:furiousmonkey,	
+	},
+	event10:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:4,
+	healthnumber:0,
+	description:angrynatives,
+	},
+	event11:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:5,
+	healthnumber:0,
+	description:stalkingpanter,
+	},
+	event12:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:6,
+	healthnumber:0,
+	description:giganticcrocodile,
+	},
+},
+
+
+{
+	class: mazzy.and.rimp.gamemodel.deck.DevelopmentCard,
+	item: flaregun,
+	sTexture: development4,
+	event9:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:4,
+	healthnumber:0,
+	description:angrynatives,
+	},
+	event10:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:-1,
+	description:pittrap,
+	},
+	event11:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:item,
+	attacknumber:0,
+	healthnumber:0,
+	},
+	event12:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:6,
+	healthnumber:0,
+	description:enormousgorilla,
+	
+	},
+},
+
+{
+	class: mazzy.and.rimp.gamemodel.deck.DevelopmentCard,
+	item: bullwhip,
+	sTexture: development5,
+	event9:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:0,
+	description:aneeriessilencefillsthejungle,
+	},
+	event10:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:1,
+	description:freshfruit,
+	},
+	event11:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:4,
+	healthnumber:0,
+	description:angrynatives,
+	},
+	event12:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:-1,
+	description:yoursoulisntwantedhere,
+	},
+},
+
+{
+	class: mazzy.and.rimp.gamemodel.deck.DevelopmentCard,
+	item: machete,
+	sTexture: development6,
+	event9:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:1,
+	description:freshfruit,
+	},
+	event10:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:4,
+	healthnumber:0,
+	description:angrynatives,
+	},
+	event11:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:0,
+	description:somethinggrowsnearby,
+	},
+	event12:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:4,
+	healthnumber:0,
+	description:angrynatives,
+	},
+},
+
+{
+	class: mazzy.and.rimp.gamemodel.deck.DevelopmentCard,
+	item: torch,
+	sTexture: development7,
+	event9:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:item,
+	attacknumber:0,
+	healthnumber:0,
+	},
+	event10:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:0,
+	description:somemonkeyhowlatyou,
+	},
+	event11:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:-1,
+	description:flametrap,
+	},
+	event12:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:5,
+	healthnumber:0,
+	description:crouchingtiger,
+	},
+},
+
+{
+	class: mazzy.and.rimp.gamemodel.deck.DevelopmentCard,
+	item: coltrevolver,
+	sTexture: development8,
+	event9:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:-1,
+	description:acidtrap,
+	},
+	event10:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:item,
+	attacknumber:0,
+	healthnumber:0,
+	},
+	event11:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:5,
+	healthnumber:0,
+	description:creepingleopard,
+	},
+	event12:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:discarditem,
+	attacknumber:0,
+	healthnumber:0,
+	
+	},
+},
+
+{
+	class: mazzy.and.rimp.gamemodel.deck.DevelopmentCard,
+	item: enfieldrevolver,
+	sTexture: development9,
+	event9:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:item,
+	attacknumber:0,
+	healthnumber:0,
+	
+	},
+	event10:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:5,
+	healthnumber:0,
+	description:pouncingpuma,
+	},
+	event11:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:eventHealth,
+	attacknumber:0,
+	healthnumber:-1,
+	description:darttrap,
+	},
+	event12:{
+	class:mazzy.and.rimp.gamemodel.deck.DevEvent,
+	type:attack,
+	attacknumber:5,
+	healthnumber:0,
+	description:prowlingjaguar,
+	},
+},
+
+
+
+]
+
+
