@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
 
 
-    public class CardManager
+public class CardManager
     {
         private static CardManager _instance;
         public List<Card> deck;
@@ -35,9 +36,17 @@ using UnityEngine;
                 this.difficulty = difficulty;
                 this.deadliness = deadliness;
 
-                String logopath = "Images/cards/" + name;
+                String logopath = "Assets/Images/cards/" + name;
                 
+
                 this.logo = Resources.Load<Sprite>(logopath);
+                if (this.logo == null)
+                {
+                    Debug.Log("No image for name "+name+" on path "+logopath);
+                }
+                
+                
+                
             }
         }
 
