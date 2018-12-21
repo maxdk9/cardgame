@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class CardDisplay : MonoBehaviour
 {
 
-	public Card card;
+	public OldCard card;
 	public  Text cardName;
 	private Text cardDescription;
 	private Text difficultyString;

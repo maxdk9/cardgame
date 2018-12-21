@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222923896666803604}
   - component: {fileID: 114355413115781326}
   m_Layer: 0
-  m_Name: Cardname (1)
+  m_Name: Cardname
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 222386593448277230}
   - component: {fileID: 114948542184004956}
   m_Layer: 0
-  m_Name: picture (1)
+  m_Name: picture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 222904423058894888}
   - component: {fileID: 114371328913948634}
   m_Layer: 0
-  m_Name: Description (1)
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 114567794094702530}
   - component: {fileID: 114685563401929968}
   - component: {fileID: 225775349247350370}
+  - component: {fileID: 114932365551903666}
   m_Layer: 0
   m_Name: CardPrefab
   m_TagString: Untagged
@@ -100,7 +101,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: cardname
+  m_text: cardname1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dd447db182548ed49933d12731e4f5ff, type: 2}
   m_sharedMaterial: {fileID: 21597952111790558, guid: dd447db182548ed49933d12731e4f5ff,
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_margin: {x: 22.484262, y: 0, z: 21.340054, w: -54.403824}
   m_textInfo:
     textComponent: {fileID: 114355413115781326}
-    characterCount: 8
+    characterCount: 9
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -353,6 +354,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 0}
   DefaultParent: {fileID: 0}
+  DefaultTempCardParent: {fileID: 0}
+  TempCardGo: {fileID: 0}
+--- !u!114 &114932365551903666
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1904968783579956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380ff2f28a0eb4d45a564744a797940a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logo: {fileID: 114948542184004956}
+  name: {fileID: 114355413115781326}
 --- !u!114 &114948542184004956
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CardScript : MonoBehaviour ,IBeginDragHandler,IDragHandler,IEndDragHandler
+public class CardMovementScript : MonoBehaviour ,IBeginDragHandler,IDragHandler,IEndDragHandler
 {
 	public  Camera MainCamera;
 

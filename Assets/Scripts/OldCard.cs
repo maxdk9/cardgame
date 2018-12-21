@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [CreateAssetMenu (fileName = "New Card", menuName = "Card")]
-public class Card : ScriptableObject  {
+public class OldCard : ScriptableObject  {
 
 	public EffectType effecttype;
 	public  CardType type;

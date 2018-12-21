@@ -17,10 +17,10 @@ public class DropPlayScript : MonoBehaviour,IDropHandler,IPointerEnterHandler,IP
 
 	public void OnDrop(PointerEventData eventData)
 	{
-		CardScript cardScript = eventData.pointerDrag.GetComponent<CardScript>();
-		if (cardScript)
+		CardMovementScript cardMovementScript = eventData.pointerDrag.GetComponent<CardMovementScript>();
+		if (cardMovementScript)
 		{
-			cardScript.DefaultParent = transform;
+			cardMovementScript.DefaultParent = transform;
 		}
 	}
 
@@ -31,10 +31,10 @@ public class DropPlayScript : MonoBehaviour,IDropHandler,IPointerEnterHandler,IP
 			return;
 		}
 
-		CardScript cardScript = eventData.pointerDrag.GetComponent<CardScript>();
-		if (cardScript)
+		CardMovementScript cardMovementScript = eventData.pointerDrag.GetComponent<CardMovementScript>();
+		if (cardMovementScript)
 		{
-			cardScript.DefaultTempCardParent = transform;
+			cardMovementScript.DefaultTempCardParent = transform;
 		}
 		
 	}
@@ -46,10 +46,10 @@ public class DropPlayScript : MonoBehaviour,IDropHandler,IPointerEnterHandler,IP
 			return;
 		}
 		
-		CardScript cardScript = eventData.pointerDrag.GetComponent<CardScript>();
-		if (cardScript&&cardScript.DefaultTempCardParent==transform)
+		CardMovementScript cardMovementScript = eventData.pointerDrag.GetComponent<CardMovementScript>();
+		if (cardMovementScript&&cardMovementScript.DefaultTempCardParent==transform)
 		{
-			cardScript.DefaultTempCardParent = cardScript.DefaultParent;
+			cardMovementScript.DefaultTempCardParent = cardMovementScript.DefaultParent;
 		}
 	}
 }
