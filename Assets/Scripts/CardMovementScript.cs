@@ -7,6 +7,8 @@ public class CardMovementScript : MonoBehaviour ,IBeginDragHandler,IDragHandler,
 {
 	public  Camera MainCamera;
 
+	public bool isDraggable;
+
 	private Vector3 offset;
 	public Transform DefaultParent;
 
@@ -30,11 +32,18 @@ public class CardMovementScript : MonoBehaviour ,IBeginDragHandler,IDragHandler,
 		offset = transform.position - MainCamera.ScreenToWorldPoint(eventData.position);
 		DefaultParent =DefaultTempCardParent= transform.parent;
 		
+		isDraggable = DefaultParent.GetComponent<DropPlayScript>().FieldType == FieldType.selfhand;
+		if (!isDraggable)
+		{
+			return;
+		}
 
 		
 		Debug.Log("sibling index= "+siblingIndex);
 		TempCardGo.transform.SetParent(DefaultParent);
 		TempCardGo.transform.SetSiblingIndex(siblingIndex);
+		
+		
 		
 		
 		
@@ -46,6 +55,11 @@ public class CardMovementScript : MonoBehaviour ,IBeginDragHandler,IDragHandler,
 
 	public void OnDrag(PointerEventData eventData)
 	{
+
+		if (!isDraggable)
+		{
+			return;
+		}
 		Vector3 newpos = MainCamera.ScreenToWorldPoint(eventData.position);
 		//newpos.z = 0;
 		transform.position = newpos+offset;
@@ -58,6 +72,11 @@ public class CardMovementScript : MonoBehaviour ,IBeginDragHandler,IDragHandler,
 
 	public void OnEndDrag(PointerEventData eventData)
 	{
+
+		if (!isDraggable)
+		{
+			return;
+		}
 		transform.SetParent(DefaultParent);
 		GetComponent<CanvasGroup>().blocksRaycasts = true;
 		TempCardGo.transform.SetParent(GameObject.Find("Canvas").transform);

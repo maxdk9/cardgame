@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\maxdk9\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\maxdk9\.Rider2018.3\system\resharper-host\Local\Transient\ReSharperHost\v183\SolutionCaches\_cardgame.479317273.00" t="ExcludeRecursive" />
+    <e p="C:\Users\maxdk9\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\maxdk9\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_cardgame.479317273.00" t="ExcludeRecursive" />
     <e p="D:\git_repo\cardgame" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -20,14 +20,16 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
-        <e p="Images" t="Include">
-          <e p="Effects" t="Include">
-            <e p="Vintage-Bleach.xml" t="Include" />
-            <e p="Vintage-Burn.xml" t="Include" />
-            <e p="Vintage-Charge.xml" t="Include" />
-            <e p="Vintage-Flash.xml" t="Include" />
-            <e p="Vintage-Mold.xml" t="Include" />
-            <e p="Vintage-Trash.xml" t="Include" />
+        <e p="Resources" t="Include">
+          <e p="Images" t="Include">
+            <e p="Effects" t="Include">
+              <e p="Vintage-Bleach.xml" t="Include" />
+              <e p="Vintage-Burn.xml" t="Include" />
+              <e p="Vintage-Charge.xml" t="Include" />
+              <e p="Vintage-Flash.xml" t="Include" />
+              <e p="Vintage-Mold.xml" t="Include" />
+              <e p="Vintage-Trash.xml" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Scripts" t="Include">

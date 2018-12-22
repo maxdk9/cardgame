@@ -3,8 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DropPlayScript : MonoBehaviour,IDropHandler,IPointerEnterHandler,IPointerExitHandler {
 
+
+public enum FieldType
+{
+	selfhand,
+	selffield,
+	enemyhand,
+	enemyfield
+		
+}
+
+public class DropPlayScript : MonoBehaviour,IDropHandler,IPointerEnterHandler,IPointerExitHandler
+{
+
+	public FieldType FieldType;
+	
 	// Use this for initialization
 	void Start () {
 		
@@ -17,15 +31,26 @@ public class DropPlayScript : MonoBehaviour,IDropHandler,IPointerEnterHandler,IP
 
 	public void OnDrop(PointerEventData eventData)
 	{
+		
+		if (this.FieldType == FieldType.enemyfield || this.FieldType == FieldType.enemyhand)
+		{
+			return;
+		}
 		CardMovementScript cardMovementScript = eventData.pointerDrag.GetComponent<CardMovementScript>();
 		if (cardMovementScript)
 		{
+			
 			cardMovementScript.DefaultParent = transform;
 		}
 	}
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{
+
+		if (this.FieldType == FieldType.enemyfield || this.FieldType == FieldType.enemyhand)
+		{
+			return;
+		}
 		if (eventData.pointerDrag == null)
 		{
 			return;

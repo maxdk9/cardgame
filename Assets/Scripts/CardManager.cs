@@ -36,7 +36,7 @@ public class CardManager
                 this.difficulty = difficulty;
                 this.deadliness = deadliness;
 
-                String logopath = "Assets/Images/cards/" + name;
+                String logopath = "Images/cards/" + name;
                 
 
                 this.logo = Resources.Load<Sprite>(logopath);
