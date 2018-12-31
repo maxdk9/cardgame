@@ -36,10 +36,19 @@ public class DropPlayScript : MonoBehaviour,IDropHandler,IPointerEnterHandler,IP
 		{
 			return;
 		}
+        
+
 		CardMovementScript cardMovementScript = eventData.pointerDrag.GetComponent<CardMovementScript>();
+        if (cardMovementScript.gameManager.PlayerFieldCards.Count > 5)
+        {
+            return;
+        }
+
+
 		if (cardMovementScript)
 		{
-			
+            cardMovementScript.gameManager.PlayerFieldCards.Add(cardMovementScript.GetComponent<CardInfoScript>());
+            cardMovementScript.gameManager.PlayerHandCards.Remove(cardMovementScript.GetComponent<CardInfoScript>());
 			cardMovementScript.DefaultParent = transform;
 		}
 	}
@@ -47,7 +56,7 @@ public class DropPlayScript : MonoBehaviour,IDropHandler,IPointerEnterHandler,IP
 	public void OnPointerEnter(PointerEventData eventData)
 	{
 
-		if (this.FieldType == FieldType.enemyfield || this.FieldType == FieldType.enemyhand)
+		if (this.FieldType == FieldType.enemyfield || this.FieldType == FieldType.enemyhand||this.FieldType==FieldType.selfhand)
 		{
 			return;
 		}

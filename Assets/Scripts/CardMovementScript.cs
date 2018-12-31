@@ -15,10 +15,12 @@ public class CardMovementScript : MonoBehaviour ,IBeginDragHandler,IDragHandler,
 	public Transform DefaultTempCardParent;
 
 	public GameObject TempCardGo;
+    public GameManager gameManager;
 	
 	// Use this for initialization
 	void Start () {
-		
+        MainCamera = Camera.allCameras[0];
+        gameManager = FindObjectOfType<GameManager>();
 	}
 	
 	// Update is called once per frame
@@ -32,7 +34,9 @@ public class CardMovementScript : MonoBehaviour ,IBeginDragHandler,IDragHandler,
 		offset = transform.position - MainCamera.ScreenToWorldPoint(eventData.position);
 		DefaultParent =DefaultTempCardParent= transform.parent;
 		
-		isDraggable = DefaultParent.GetComponent<DropPlayScript>().FieldType == FieldType.selfhand;
+		isDraggable = (DefaultParent.GetComponent<DropPlayScript>().FieldType == FieldType.selfhand||
+            DefaultParent.GetComponent<DropPlayScript>().FieldType==FieldType.selffield
+            )&&gameManager.IsPlayerTurn;
 		if (!isDraggable)
 		{
 			return;
@@ -63,11 +67,17 @@ public class CardMovementScript : MonoBehaviour ,IBeginDragHandler,IDragHandler,
 		Vector3 newpos = MainCamera.ScreenToWorldPoint(eventData.position);
 		//newpos.z = 0;
 		transform.position = newpos+offset;
-		CheckPosition();
+	
 		if (TempCardGo.transform.parent != DefaultTempCardParent)
 		{
 			TempCardGo.transform.SetParent(DefaultTempCardParent);
 		}
+
+
+        if (DefaultParent.GetComponent<DropPlayScript>().FieldType != FieldType.selfhand)
+        {
+            CheckPosition();
+        }
 	}
 
 	public void OnEndDrag(PointerEventData eventData)

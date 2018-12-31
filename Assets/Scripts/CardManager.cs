@@ -7,53 +7,69 @@ using UnityEngine.Experimental.PlayerLoop;
 
 
 public class CardManager
+{
+    private static CardManager _instance;
+    public List<Card> deck;
+
+
+    public static CardManager getInstance()
     {
-        private static CardManager _instance;
-        public List<Card> deck;
-
-
-        public static CardManager getInstance()
+        if (_instance == null)
         {
-            if (_instance == null)
-            {
-                _instance = new CardManager();
-            }
-
-            return _instance;
+            _instance = new CardManager();
         }
 
+        return _instance;
+    }
 
-        public struct Card
+
+    public struct Card
+    {
+        public string Name;
+        public Sprite logo;
+        public int difficulty;
+        public int deadliness;
+        public bool canAttack;
+
+        public Card(string name, int difficulty, int deadliness)
         {
-            public string Name;
-            public Sprite logo;
-            public int difficulty;
-            public int deadliness;
+            this.Name = name;
+            this.difficulty = difficulty;
+            this.deadliness = deadliness;
+            this.canAttack = false;
+            String logopath = "Images/cards/" + name;
 
-            public Card(string name, int difficulty, int deadliness)
+
+            this.logo = Resources.Load<Sprite>(logopath);
+            if (this.logo == null)
             {
-                this.Name = name;
-                this.difficulty = difficulty;
-                this.deadliness = deadliness;
-
-                String logopath = "Images/cards/" + name;
-                
-
-                this.logo = Resources.Load<Sprite>(logopath);
-                if (this.logo == null)
-                {
-                    Debug.Log("No image for name "+name+" on path "+logopath);
-                }
-                
-                
-                
+                Debug.Log("No image for name " + name + " on path " + logopath);
             }
+
+
+
         }
 
-        public CardManager()
+        public void ChangeCanAttack(bool b)
         {
-            deck = new List<Card>();
+            this.canAttack = b;
+        }
+
+        public void GetDamage(int damage)
+        {
+            this.difficulty -= damage;
+        }
+
+        public bool isAlive()
+        {
+            return difficulty > 0;
         }
     }
 
-   
+    public CardManager()
+    {
+        deck = new List<Card>();
+    }
+}
+
+
