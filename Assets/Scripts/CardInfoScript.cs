@@ -16,19 +16,25 @@ public class CardInfoScript : MonoBehaviour
     public TextMeshProUGUI difficultyLabel;
     public Image hideObj;
     public GameObject highlightedObj;
+	public bool isPlayer;
 
     public void HideCardInfo(CardManager.Card c)
     {
         this.selfCard = c;
         hideObj.enabled = true;
+	    isPlayer = false;
+	    
     }
 
-	public void ShowCardInfo(CardManager.Card c)
+	public void ShowCardInfo(CardManager.Card c,bool isplayer)
 	{
+		hideObj.enabled = false;
 		this.selfCard = c;
 		this.logo.sprite = c.logo;
 		this.name.SetText(c.Name);
 		this.logo.preserveAspect = true;
+		
+		isPlayer = isplayer;
         RefreshCard();
        
 	}

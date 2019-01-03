@@ -12,6 +12,11 @@ public class AttackedCard : MonoBehaviour,IDropHandler
         if (card && card && card.selfCard.canAttack && transform.parent == GameManager.GetInstance().EnemyField)
         {
             card.selfCard.ChangeCanAttack(false);
+
+            if (card.isPlayer)
+            {
+                card.DehightlightCard();
+            }
             CardInfoScript attackedCard = this.GetComponent<CardInfoScript>();
             GameManager.GetInstance().CardFight(card, attackedCard);
         }

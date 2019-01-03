@@ -45,6 +45,11 @@ public class DropPlayScript : MonoBehaviour,IDropHandler,IPointerEnterHandler,IP
         }
 
 
+		if (!GameManager.GetInstance().IsPlayerTurn)
+		{
+			return;
+		}
+
 		if (cardMovementScript)
 		{
             cardMovementScript.gameManager.PlayerFieldCards.Add(cardMovementScript.GetComponent<CardInfoScript>());

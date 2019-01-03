@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Object = System.Object;
+using Random = System.Random;
 
 public class GameManager : MonoBehaviour
 {
@@ -44,7 +47,10 @@ public class GameManager : MonoBehaviour
         {
             DestroyCard(attackingCard);
         }
-        else { attackingCard.RefreshCard(); }
+        else
+        {
+            attackingCard.RefreshCard();
+        }
     }
 
     private void DestroyCard(CardInfoScript card)
@@ -60,7 +66,9 @@ public class GameManager : MonoBehaviour
         {
             EnemyFieldCards.Remove(card);
         }
-        DestroyObject(card);
+        
+        Destroy(card.gameObject);
+         
 
     }
 
@@ -161,7 +169,7 @@ public class GameManager : MonoBehaviour
         }
         if (hand == PlayerHand)
         {
-            cardGO.GetComponent<CardInfoScript>().ShowCardInfo(tekcard);
+            cardGO.GetComponent<CardInfoScript>().ShowCardInfo(tekcard,true);
             this.PlayerHandCards.Add(cardGO.GetComponent<CardInfoScript>());
 
         }
@@ -212,10 +220,32 @@ public class GameManager : MonoBehaviour
         
         CardInfoScript card = enemyList[0];
         card.transform.SetParent(EnemyField);
-        card.ShowCardInfo(card.selfCard);
+        card.ShowCardInfo(card.selfCard,false);
 
         EnemyHandCards.Remove(card);
         EnemyFieldCards.Add(card);
+
+
+        foreach (var activeCard in EnemyFieldCards.FindAll(x=>x.selfCard.canAttack))
+        {
+            if (PlayerFieldCards.Count == 0)
+            {
+                return;
+            }
+
+            var enemyCard = PlayerFieldCards[UnityEngine.Random.Range(0, PlayerFieldCards.Count-1)];
+
+            String attackComment = "Ai card " + activeCard.selfCard.Name + " params : difficulty " +
+                                   activeCard.selfCard.difficulty + ", deadliness " + activeCard.selfCard.deadliness +
+                                   "attack player card " + enemyCard.selfCard.Name + " params : difficulty " +
+                                   enemyCard.selfCard.difficulty + ", deadliness " + enemyCard.selfCard.deadliness;
+
+            Debug.Log(attackComment);
+
+            activeCard.selfCard.ChangeCanAttack(false);
+            CardFight(enemyCard,activeCard);
+
+        }
 
     }
 }

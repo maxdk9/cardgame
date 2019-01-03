@@ -33,14 +33,17 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CardDisplay.cs" t="Include" />
+          <e p="AttackedCard.cs" t="Include" />
           <e p="CardInfoScript.cs" t="Include" />
           <e p="CardManager.cs" t="Include" />
           <e p="CardManagerScr.cs" t="Include" />
           <e p="CardMovementScript.cs" t="Include" />
           <e p="CardNames.cs" t="Include" />
           <e p="DropPlayScript.cs" t="Include" />
-          <e p="OldCard.cs" t="Include" />
+          <e p="GameManager" t="Include">
+            <e p="Game.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
