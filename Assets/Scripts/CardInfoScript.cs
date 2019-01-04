@@ -14,6 +14,7 @@ public class CardInfoScript : MonoBehaviour
 
     public TextMeshProUGUI deadlinessLabel;
     public TextMeshProUGUI difficultyLabel;
+	public TextMeshProUGUI manacostLabel;
     public Image hideObj;
     public GameObject highlightedObj;
 	public bool isPlayer;
@@ -23,7 +24,7 @@ public class CardInfoScript : MonoBehaviour
         this.selfCard = c;
         hideObj.enabled = true;
 	    isPlayer = false;
-	    
+	    this.manacostLabel.text = "";
     }
 
 	public void ShowCardInfo(CardManager.Card c,bool isplayer)
@@ -33,7 +34,6 @@ public class CardInfoScript : MonoBehaviour
 		this.logo.sprite = c.logo;
 		this.name.SetText(c.Name);
 		this.logo.preserveAspect = true;
-		
 		isPlayer = isplayer;
         RefreshCard();
        
@@ -42,8 +42,8 @@ public class CardInfoScript : MonoBehaviour
 	private void Start()
 	
 	{
-		CardManager.Card c = CardManager.getInstance().deck[transform.GetSiblingIndex()];
-        this.selfCard = c;
+		//CardManager.Card c = CardManager.getInstance().deck[transform.GetSiblingIndex()];
+        //this.selfCard = c;
 		//ShowCardInfo(c);
 		
 	}
@@ -52,6 +52,7 @@ public class CardInfoScript : MonoBehaviour
     {
         this.difficultyLabel.text = selfCard.difficulty.ToString();
         this.deadlinessLabel.text = selfCard.deadliness.ToString();
+	    this.manacostLabel.text = selfCard.manacost.ToString();
     }
 
     public void HighlightCard()

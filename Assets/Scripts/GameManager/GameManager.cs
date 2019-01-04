@@ -29,6 +29,14 @@ public class GameManager : MonoBehaviour
     public Transform PlayerField;
     public Transform EnemyField;
 
+    public TextMeshProUGUI playerManaLabel;
+    public TextMeshProUGUI enemyManaLabel;
+
+
+    public int PlayerMana=10;
+
+    public int EnemyMana=10;
+
     internal void CardFight(CardInfoScript attackedCard, CardInfoScript attackingCard)
     {
         attackedCard.selfCard.GetDamage(attackingCard.selfCard.deadliness);
@@ -91,6 +99,9 @@ public class GameManager : MonoBehaviour
         CurrentGame = new Game();
         GiveHandCards(CurrentGame.playerDeck, PlayerHand);
         GiveHandCards(CurrentGame.enemyDeck, EnemyHand);
+        this.EnemyMana = 10;
+        this.PlayerMana = 10;
+        UpdateManaLabels();
         StartCoroutine(TurnFunc());
     }
 
@@ -187,10 +198,18 @@ public class GameManager : MonoBehaviour
         if (IsPlayerTurn)
         {
             GiveNewCards();
+            PlayerMana = 10;
+            EnemyMana = 10;
+            UpdateManaLabels();
         }
         StartCoroutine(TurnFunc());
     }
 
+    private void UpdateManaLabels()
+    {
+        this.enemyManaLabel.text = this.EnemyMana.ToString();
+        this.playerManaLabel.text = this.PlayerMana.ToString();
+    }
 
 
     public bool IsPlayerTurn
@@ -247,5 +266,18 @@ public class GameManager : MonoBehaviour
 
         }
 
+    }
+
+    public void ReduceMana(bool isplayer, int manacost)
+    {
+        if (isplayer)
+        {
+            PlayerMana -= manacost;
+        }
+        else
+        {
+            EnemyMana -= manacost;
+        }
+        UpdateManaLabels();
     }
 }

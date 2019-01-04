@@ -50,11 +50,23 @@ public class DropPlayScript : MonoBehaviour,IDropHandler,IPointerEnterHandler,IP
 			return;
 		}
 
+		CardInfoScript cardInfoScript = cardMovementScript.GetComponent<CardInfoScript>();
+		
+		if (GameManager.GetInstance().PlayerMana < cardInfoScript.selfCard.manacost)
+		{
+			return;
+		}
+
 		if (cardMovementScript)
 		{
-            cardMovementScript.gameManager.PlayerFieldCards.Add(cardMovementScript.GetComponent<CardInfoScript>());
-            cardMovementScript.gameManager.PlayerHandCards.Remove(cardMovementScript.GetComponent<CardInfoScript>());
+			GameManager.GetInstance()
+				.ReduceMana(true, cardInfoScript.selfCard.manacost);
+			
+            cardMovementScript.gameManager.PlayerFieldCards.Add(cardInfoScript);
+            cardMovementScript.gameManager.PlayerHandCards.Remove(cardInfoScript);
 			cardMovementScript.DefaultParent = transform;
+
+			
 		}
 	}
 

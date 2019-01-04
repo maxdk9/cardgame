@@ -29,14 +29,16 @@ public class CardManager
         public Sprite logo;
         public int difficulty;
         public int deadliness;
+        public int manacost;
         public bool canAttack;
 
-        public Card(string name, int difficulty, int deadliness)
+        public Card(string name, int difficulty, int deadliness,int manacost)
         {
             this.Name = name;
             this.difficulty = difficulty;
             this.deadliness = deadliness;
             this.canAttack = false;
+            this.manacost = manacost;
             String logopath = "Images/cards/" + name;
 
 
